@@ -7,9 +7,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints maxHeight="150.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
@@ -30,17 +31,17 @@
       </Label>
       <VBox alignment="CENTER" prefHeight="205.0" prefWidth="600.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
          <children>
-            <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="320.0" promptText="Username">
+            <TextField fx:id="txtUsername" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="320.0" promptText="Username">
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin>
             </TextField>
-            <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="320.0" promptText="Password">
+            <PasswordField fx:id="pwdPassword" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="320.0" promptText="Password">
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin>
             </PasswordField>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Login">
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="100.0" text="Login">
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin>
@@ -57,7 +58,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" text="Register">
+            <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#handleRegister" text="Register">
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
