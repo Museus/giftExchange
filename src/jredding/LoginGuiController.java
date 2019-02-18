@@ -38,11 +38,8 @@ public class LoginGuiController {
 		
 		try {
 	        Scene popupScene = new Scene((Parent)registerLoader.load(), 500, 500);
-
-			System.out.println("Running");
 			popupStage.setScene(popupScene);
 			popupStage.show();
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -50,10 +47,13 @@ public class LoginGuiController {
 	
 	public void handleLogin() {
 		String username = txtUsername.getText();
-		if(dbConn.userExists(username)) {
-			System.out.println("User exists.");
+		String password = pwdPassword.getText();
+		User userToken = dbConn.getToken(username, password);
+		if(userToken != null) {
+			System.out.println("Login Successful!");
+			System.out.println(userToken.toString());
 		} else {
-			System.out.println("User does not exist.");
+			System.out.println("Login Failed.");
 		}
 	}
 }

@@ -19,6 +19,8 @@ public class RegisterGuiController {
 	@FXML
 	private TextField txtEmailAddress;
 	@FXML
+	private TextField txtPhoneNumber;
+	@FXML
 	private PasswordField pwdPassword;
 	@FXML
 	private PasswordField pwdRePassword;
@@ -34,11 +36,12 @@ public class RegisterGuiController {
 		String lastName = txtLastName.getText();
 		String username = txtUsername.getText();
 		String emailAddress = txtEmailAddress.getText();
+		String phoneNumber = txtPhoneNumber.getText();
 		String password = pwdPassword.getText();
 		
 		boolean[] dup = dbConn.userExists(username, emailAddress);
 		if(!dup[0] && !dup[1]) {
-			dbConn.createUser(firstName, lastName, username, emailAddress, password);
+			dbConn.createUser(firstName, lastName, username, emailAddress, phoneNumber, password);
 			Stage stage = (Stage) btnRegister.getScene().getWindow();
 		    stage.close();
 		}

@@ -35,4 +35,14 @@ public class User {
 	public void setLastName(String lastName) { this.lastName = lastName; }
 	public void setEmailAddress(String emailAddress) { this.emailAddress = emailAddress; }
 	public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+	
+	public String toString() {
+		StringBuilder temp = new StringBuilder();
+		temp.append("Name: " + firstName + " " + lastName);
+		temp.append("\nUsername: " + userName);
+		temp.append("\nEmail: " + emailAddress);
+		temp.append("\nPhone Number: " + phoneNumber);
+		
+		return temp.toString();
+	}
 }

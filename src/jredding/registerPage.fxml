@@ -14,7 +14,8 @@
   </columnConstraints>
   <rowConstraints>
     <RowConstraints maxHeight="80.0" minHeight="50.0" prefHeight="80.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="50.0" minHeight="40.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -23,23 +24,25 @@
       <RowConstraints maxHeight="60.0" minHeight="50.0" prefHeight="60.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TextField fx:id="txtFirstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField fx:id="txtLastName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Label fx:id="lblFirstName" text="First Name: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
-      <Label fx:id="lblLastName" text="Last Name: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
-      <TextField fx:id="txtUsername" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Label fx:id="lblUsername" text="Username: " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
-      <TextField fx:id="txtEmailAddress" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Label fx:id="lblEmailAddress" text="Email Address: " GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
-      <PasswordField fx:id="pwdPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Label fx:id="lblPassword" text="Password: " GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
-      <PasswordField fx:id="pwdRePassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-      <Label fx:id="lblRePassword" text="Re-enter Password: " GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
       <Label fx:id="lblTitle" text="Register New Account" GridPane.columnSpan="2" GridPane.halignment="CENTER">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#handleRegister" prefHeight="40.0" prefWidth="120.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label fx:id="lblFirstName" text="First Name: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+      <TextField fx:id="txtFirstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="lblLastName" text="Last Name: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+      <TextField fx:id="txtLastName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="lblUsername" text="Username: " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <TextField fx:id="txtUsername" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="lblEmailAddress" text="Email Address: " GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+      <TextField fx:id="txtEmailAddress" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="lblPhoneNumber" text="Phone Number: " GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+      <TextField fx:id="txtPhoneNumber" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label fx:id="lblPassword" text="Password: " GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+      <PasswordField fx:id="pwdPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label fx:id="lblRePassword" text="Re-enter Password: " GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+      <PasswordField fx:id="pwdRePassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#handleRegister" prefHeight="40.0" prefWidth="120.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="8" />
    </children>
 </GridPane>
